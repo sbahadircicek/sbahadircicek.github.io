@@ -1,0 +1,9 @@
+# Site settings
+title: Theme
+author:
+  name: sbahadircicek
+  email: 
+description: "Theme"
+
+# Build settings
+remote_theme: jekyll/minima
