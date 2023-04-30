@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: black 2px solid;
+    background-color: darkgrey;
+    height: 75px;
+}
+
+
+.header .title {
+    padding-left: 25px;
+}
+
+.container h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container .menu {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 2em;
+}
+
+.chicken {
+    margin: 25px;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+.chicken h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.chicken p {
+    color: black;
+    font-weight: bold;
+}
+
+.beef {
+    margin: 25px;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+.beef h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.beef p {
+    color: black;
+    font-weight: bold;
+}
+
+.sushi {
+    margin: 25px;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+.sushi h3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.sushi p {
+    color: black;
+    font-weight: bold;
+}
+
+@media (min-width: 767px) {
+
+    .header .menu-title {
+        display: flex;
+        gap: 25px;
+        margin-right: 25px;
+    }
+
+    .header .menu-title a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+
+    #menu-box {
+        display: none;
+    }
+
+    .container .drop_down_menu {
+        display: none;
+    }
+}
+
+@media (max-width: 766px) {
+
+    .header .menu-title {
+        display: none;
+    }
+
+    #menu-box {
+        margin-right: 25px;
+        cursor: pointer;
+        border: black 1px solid;
+        background-color: transparent;
+        height: 30px;
+        font-size: 2em;
+    }
+
+    #menu-box:hover {
+        color: white;
+        border-color: white;
+    }
+
+    .drop_down_menu {
+        display: none;
+    }
+    
+    .drop_down_menu.active {
+        text-align: center;
+        display: grid;
+    }
+
+    .drop_down_menu li {
+        border: 2px black solid;
+        border-top: none;
+    }
+
+    .drop_down_menu li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+}

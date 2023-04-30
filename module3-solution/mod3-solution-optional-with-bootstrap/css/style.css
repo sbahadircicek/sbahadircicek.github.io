@@ -1,0 +1,26 @@
+.visible-xs {
+    text-align: center;
+    border: black 2px solid;
+}
+
+.navigation-row {
+    border-top: none;
+}
+
+.visible-xs a {
+    color: black;
+}
+
+.content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: darkgrey;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content p {
+    font-weight: bold;
+}
